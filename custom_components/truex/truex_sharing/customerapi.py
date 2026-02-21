@@ -581,23 +581,6 @@ class CustomerApi:
             {"commands": commands},
         )
 
-    async def get_device_stream_allocate(
-        self,
-        uid: str,
-        device_id: str,
-        stream_type: str,
-    ) -> dict[str, Any]:
-        """Get live streaming address for a device.
-
-        POST /v1.0/users/{uid}/devices/{device_id}/stream/actions/allocate
-        Body: {"type": "RTSP" | "HLS" | "FLV" | "RTMP"}
-        """
-        return await self.post(
-            f"/v1.0/users/{uid}/devices/{device_id}/stream/actions/allocate",
-            None,
-            {"type": stream_type},
-        )
-
     async def get_device_functions(
         self, device_id: str
     ) -> dict[str, Any]:
