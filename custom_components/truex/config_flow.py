@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from truex_sharing import CustomerApi, TrueXAPIError
+from .truex_sharing import CustomerApi, TrueXAPIError
 
 import voluptuous as vol
 

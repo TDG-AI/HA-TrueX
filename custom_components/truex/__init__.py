@@ -8,7 +8,7 @@ from typing import Any
 
 from typing_extensions import TypeAlias
 
-from truex_sharing import (
+from .truex_sharing import (
     CustomerApi,
     Manager,
     TrueXAPIError,

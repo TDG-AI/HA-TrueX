@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from truex_sharing import CustomerDevice, Manager
+from .truex_sharing import CustomerDevice, Manager
 
 from homeassistant.components.cover import (
     ATTR_POSITION,

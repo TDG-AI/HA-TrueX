@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-from truex_sharing import CustomerDevice, Manager
+from .truex_sharing import CustomerDevice, Manager
 
 from homeassistant.components.sensor import (
     SensorDeviceClass,

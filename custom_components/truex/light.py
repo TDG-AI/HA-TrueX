@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 from typing import Any
 
-from truex_sharing import CustomerDevice, Manager
+from .truex_sharing import CustomerDevice, Manager
 
 from homeassistant.components.light import (
     ATTR_BRIGHTNESS,
