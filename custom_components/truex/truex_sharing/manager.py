@@ -163,3 +163,24 @@ class Manager:
         except Exception:
             logger.exception("Error sending commands to %s", device_id)
             return False
+
+    async def get_device_stream_allocate(
+        self, device_id: str, stream_type: str
+    ) -> str | None:
+        """Get the live streaming URL for a device."""
+        try:
+            response = await self.api.get_device_stream_allocate(
+                self.uid, device_id, stream_type.upper()
+            )
+            if response.get("success"):
+                return response.get("result", {}).get("url")
+            logger.error(
+                "Failed to allocate stream for %s: %s",
+                device_id,
+                response,
+            )
+        except Exception:
+            logger.exception(
+                "Error allocating stream for %s", device_id
+            )
+        return None

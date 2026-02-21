@@ -28,6 +28,7 @@ POLL_INTERVAL = 30
 
 PLATFORMS = [
     Platform.BINARY_SENSOR,
+    Platform.CAMERA,
     Platform.CLIMATE,
     Platform.COVER,
     Platform.LIGHT,
@@ -190,3 +191,9 @@ class DeviceCategory(StrEnum):
     """Garage door opener"""
     MC = "mc"
     """Door/window controller"""
+
+    # Camera
+    SP = "sp"
+    """Smart camera"""
+    DGHSXJ = "dghsxj"
+    """Low power consumption camera"""
