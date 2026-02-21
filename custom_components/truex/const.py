@@ -19,9 +19,6 @@ CONF_USERNAME = "username"
 CONF_TOKEN_INFO = "token_info"
 CONF_UID = "uid"
 
-# Default API URL
-DEFAULT_API_URL = "https://openapi-cube.tdgiotengine.com"
-
 # Signals
 TRUEX_DISCOVERY_NEW = "truex_discovery_new"
 TRUEX_HA_SIGNAL_UPDATE_ENTITY = "truex_entry_update"

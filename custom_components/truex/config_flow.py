@@ -18,7 +18,6 @@ from .const import (
     CONF_TOKEN_INFO,
     CONF_UID,
     CONF_USERNAME,
-    DEFAULT_API_URL,
     DOMAIN,
     LOGGER,
 )
@@ -95,7 +94,7 @@ class TrueXConfigFlow(ConfigFlow, domain=DOMAIN):
                 {
                     vol.Required(
                         CONF_API_URL,
-                        default=(user_input or {}).get(CONF_API_URL, DEFAULT_API_URL),
+                        default=(user_input or {}).get(CONF_API_URL, ""),
                     ): str,
                     vol.Required(
                         CONF_CLIENT_ID,
