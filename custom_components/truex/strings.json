@@ -1,0 +1,33 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "This TrueX account is already configured."
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the TrueX API. Please check the API URL, Client ID, and Secret.",
+      "invalid_user": "Failed to look up user. Please check the Schema and Username.",
+      "user_not_found": "No user found with the given username.",
+      "unknown": "An unexpected error occurred."
+    },
+    "step": {
+      "user": {
+        "title": "TrueX Smart Home",
+        "description": "Enter your TrueX CUBE API credentials to connect your devices.",
+        "data": {
+          "api_url": "API URL",
+          "client_id": "Client ID",
+          "secret": "Client Secret",
+          "schema": "Schema",
+          "username": "Username"
+        },
+        "data_description": {
+          "api_url": "The OPENAPI CUBE endpoint URL",
+          "client_id": "Your Tuya CUBE Client ID",
+          "secret": "Your Tuya CUBE Client Secret",
+          "schema": "Your application schema identifier",
+          "username": "The username associated with the account"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "domain": "truex",
+  "name": "TrueX Smart Home",
+  "version": "0.1.0",
+  "codeowners": [],
+  "config_flow": true,
+  "documentation": "",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "requirements": []
+}
